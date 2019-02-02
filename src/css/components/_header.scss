@@ -1,0 +1,16 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 10rem;
+  margin-bottom: 3rem;
+}
+
+.header__button {
+  transition: all 1s;
+}
+
+.header__button:hover {
+  transform: translateY(-6px);
+}
