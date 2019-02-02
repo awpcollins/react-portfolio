@@ -5,12 +5,12 @@
   flex-direction: column;
   margin-top: 10rem;
   margin-bottom: 3rem;
-}
 
-.header__button {
-  transition: all 1s;
-}
+		&__button {
+			transition: all 1s;
 
-.header__button:hover {
-  transform: translateY(-6px);
+			&:hover{
+				transform: translateY(-6px);
+			}
+		}
 }
