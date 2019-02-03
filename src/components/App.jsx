@@ -6,18 +6,30 @@ import Intro from './Intro.jsx';
 
 class App extends React.Component {
 	state = {
-		selectedView : {
-			intro: false,
-			github: false,
-			examples: false,
-			more: false
+		modes: {
+			intro: {
+				selected: false,
+				link: '',
+			},
+			github: {
+				selected: false,
+				link: '',
+			},
+			examples: {
+				selected: false,
+				link: '',
+			},
+			more: {
+				selected: false,
+				link: '',
+			}
 		}
 	};
 
 	getInfo = () => {
 		const state = {...this.state};
 
-		state.selectedView.intro = true;
+		state.modes.intro.selected = true;
 		this.setState(state);
 	}
 
@@ -25,8 +37,8 @@ class App extends React.Component {
     return (
       <div>
         <Header title="Alfie Collins" button="Get Info" getInfo={this.getInfo}/>
-        <Navbar selectedView={this.state.selectedView} />
-								<Intro selectedView={this.state.selectedView} />
+        <Navbar modes={this.state.modes} />
+								<Intro modes={this.state.modes} />
       </div>
     );
   }

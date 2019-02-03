@@ -32,5 +32,9 @@
     text-decoration: none;
     line-height: 6.5rem;
     color: #222;
+
+				&--selected {
+					color: #33C3F0 !important;
+				}
   }
 }

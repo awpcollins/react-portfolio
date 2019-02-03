@@ -1,10 +1,14 @@
-import React from "react";
+import React from 'react';
+import classNames from 'classnames';
 
-const NavbarItem = ({item}) => {
+const NavbarItem = ({title, item}) => {
+
+	const linkClasses = classNames("navbar__link", {"navbar__link--selected": item.selected});
+
   return (
     <li className="navbar__item">
-      <a href={item.link} className="navbar__link">
-        {item.title}
+      <a href={item.link} className={linkClasses}>
+        {title}
       </a>
     </li>
   );

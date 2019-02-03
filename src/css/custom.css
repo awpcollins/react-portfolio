@@ -63,6 +63,8 @@
     text-decoration: none;
     line-height: 6.5rem;
     color: #222; }
+    .navbar__link--selected {
+      color: #33C3F0 !important; }
 
 .intro {
   padding: 5rem;
