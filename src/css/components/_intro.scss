@@ -1,0 +1,11 @@
+.intro {
+  padding: 5rem;
+  background-color: #eee;
+  max-width: 400px;
+
+		&--animation {
+			animation: moveUp 1s;
+		}
+
+}
+

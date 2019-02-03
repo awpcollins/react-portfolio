@@ -3,10 +3,12 @@
 }
 
 .navbar {
-  &__container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &--animation {
+    animation: moveFromLeft 1s;
   }
 
   &__list {

@@ -1,6 +1,6 @@
-import React from "react";
-import NavbarItem from "./NavbarItem.jsx";
-import classNames from "classnames";
+import React from 'react';
+import NavbarItem from './NavbarItem.jsx';
+import classNames from 'classnames';
 
 class Navbar extends React.Component {
   items = [
@@ -23,15 +23,16 @@ class Navbar extends React.Component {
   ];
 
   render() {
+			console.log(this.props.selectedView);
     const classes = classNames(
       "navbar",
-      {hidden: !this.props.showInfo},
-      {"navbar-animation": this.props.showInfo}
+      {hidden: !this.props.selectedView.intro},
+      {"navbar--animation": this.props.selectedView.intro}
     );
 
     return (
       <nav className={classes}>
-        <div className="navbar__container">
+        <div className="container navbar">
           <ul className="navbar__list">
             {this.items.map((item, index) => (
               <NavbarItem key={index} item={item} />

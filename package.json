@@ -5,6 +5,7 @@
   "license": "MIT",
   "scripts": {
     "start": "react-scripts start",
+    "watch:sass": "node-sass src/css/main.scss src/css/custom.css -w",
     "compile:sass": "node-sass src/css/main.scss src/css/temp/style.comp.css",
     "concat:css": "concat -o src/css/temp/style.concat.css src/css/temp/style.comp.css",
     "prefix:css": "postcss --use autoprefixer -b 'last 10 versions' src/css/temp/style.concat.css -o src/css/temp/style.prefix.css",
