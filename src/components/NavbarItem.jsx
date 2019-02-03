@@ -1,13 +1,19 @@
 import React from 'react';
 import classNames from 'classnames';
 
-const NavbarItem = ({title, item}) => {
+const NavbarItem = ({title, item, selectMode}) => {
 
 	const linkClasses = classNames("navbar__link", {"navbar__link--selected": item.selected});
 
+	const changeMode = (e) => {
+		e.preventDefault();
+
+		selectMode(title);
+		};
+
   return (
     <li className="navbar__item">
-      <a href={item.link} className={linkClasses}>
+      <a href={item.link} onClick={changeMode} className={linkClasses}>
         {title}
       </a>
     </li>

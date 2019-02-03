@@ -7,8 +7,8 @@ class Navbar extends React.Component {
     const modes = this.props.modes;
     const classes = classNames(
       "navbar",
-      {hidden: !modes.intro.selected},
-      {"navbar--animation": modes.intro.selected}
+      {hidden: !this.props.showNav},
+      {"navbar--animation": this.props.showNav}
     );
 
     return (
@@ -16,7 +16,7 @@ class Navbar extends React.Component {
         <div className="container navbar">
           <ul className="navbar__list">
             {Object.keys(modes).map(key => (
-              <NavbarItem key={key} title={key} item={modes[key]} />
+              <NavbarItem key={key} title={key} item={modes[key]} selectMode={this.props.selectMode} />
             ))}
           </ul>
         </div>
