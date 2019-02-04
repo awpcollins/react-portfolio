@@ -18,7 +18,7 @@ class App extends React.Component {
       },
       github: {
         selected: false,
-        link: ""
+        link: "https://github.com/awpcollins"
       },
       more: {
         selected: false,

@@ -8,6 +8,10 @@ const NavbarItem = ({title, item, selectMode}) => {
 	const changeMode = (e) => {
 		e.preventDefault();
 
+		if(item.link){
+			 window.open(item.link);
+		}
+
 		selectMode(title);
 		};
 
