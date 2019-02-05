@@ -1,6 +1,6 @@
-import React from "react";
-import NavbarItem from "./NavbarItem.jsx";
-import classNames from "classnames";
+import React from 'react'
+import NavbarItem from './NavbarItem.jsx'
+import classNames from 'classnames'
 
 class Navbar extends React.Component {
   render() {
@@ -25,4 +25,4 @@ class Navbar extends React.Component {
   }
 }
 
-export default Navbar;
+export default Navbar
