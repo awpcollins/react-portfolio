@@ -3,6 +3,7 @@ import React from "react";
 import Header from "./Header.jsx";
 import Navbar from "./Navbar.jsx";
 import Intro from "./Intro.jsx";
+import Tech from "./Tech.jsx";
 
 class App extends React.Component {
   state = {
@@ -14,7 +15,7 @@ class App extends React.Component {
       },
       technologies: {
         selected: false,
-        link: ""
+        link: "",
       },
       github: {
         selected: false,
@@ -62,6 +63,7 @@ class App extends React.Component {
           selectMode={this.selectMode}
         />
         <Intro modes={this.state.modes} />
+								<Tech modes={this.state.modes} />
       </div>
     );
   }

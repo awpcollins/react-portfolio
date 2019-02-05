@@ -1,0 +1,20 @@
+.tech {
+
+		animation: moveUp 1s;
+  &__list {
+    display: flex;
+				max-width: 500px;
+    width: 100%;
+				justify-content: center;
+    list-style: none;
+  }
+
+		&__item {
+			margin: 1rem;
+
+			&:hover {
+				animation: bounce 1s infinite;
+			}
+		}
+
+}

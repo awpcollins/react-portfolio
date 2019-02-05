@@ -1,0 +1,7 @@
+.tech-item {
+  margin: 1rem;
+
+  &:hover {
+    animation: bounce 1s infinite;
+  }
+}
