@@ -51,8 +51,8 @@ render() {
 	return (
 		<div>
 			<Header
-				title="Alfie Collins"
-				button="Get Info"
+				title='Alfie Collins'
+				button='Get Info'
 				getInfo={this.getInfo}
 			/>
 			<Navbar

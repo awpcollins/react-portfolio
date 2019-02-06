@@ -13,8 +13,8 @@ class Navbar extends React.Component {
 
 		return (
 			<nav className={classes}>
-				<div className="container navbar">
-					<ul className="navbar__list">
+				<div className='container navbar'>
+					<ul className='navbar__list'>
 						{Object.keys(modes).map(key => (
 							<NavbarItem key={key} title={key} item={modes[key]} selectMode={this.props.selectMode} />
 						))}

@@ -16,7 +16,7 @@ const NavbarItem = ({title, item, selectMode}) => {
 	}
 
 	return (
-		<li className="navbar__item">
+		<li className='navbar__item'>
 			<a href={item.link} onClick={changeMode} className={linkClasses}>
 				{title}
 			</a>
