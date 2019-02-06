@@ -14,7 +14,7 @@
     "compress:css": "node-sass src/css/temp/style.prefix.css src/css/custom.css --output-style compressed",
     "build:css": "npm-run-all compile:sass concat:css prefix:css compress:css"
   },
-  "homepage": "https://github.com/awpcollins/react-portfolio",
+  "homepage": "https://awpcollins.github.io/react-portfolio",
   "dependencies": {
     "babel": "^6.23.0",
     "classnames": "^2.2.6",

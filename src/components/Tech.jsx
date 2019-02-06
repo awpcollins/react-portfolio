@@ -29,7 +29,7 @@ const Tech = ({modes}) => {
 
 	return (
 		<div className={classes}>
-			<ul className='tech__list's>
+			<ul className='tech__list'>
 				{Object.keys(technologies).map(key => (
 					<TechItem key={key} title={key} item={technologies[key]} />
 				))}
