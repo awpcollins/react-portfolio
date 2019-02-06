@@ -5,7 +5,8 @@
   "license": "MIT",
   "scripts": {
     "start": "react-scripts start",
-				"build": "react-scripts build",
+    "build": "react-scripts build",
+				"deploy": "gh-pages -d build",
     "watch:sass": "node-sass src/css/main.scss src/css/custom.css -w",
     "compile:sass": "node-sass src/css/main.scss src/css/temp/style.comp.css",
     "concat:css": "concat -o src/css/temp/style.concat.css src/css/temp/style.comp.css",
@@ -13,7 +14,7 @@
     "compress:css": "node-sass src/css/temp/style.prefix.css src/css/custom.css --output-style compressed",
     "build:css": "npm-run-all compile:sass concat:css prefix:css compress:css"
   },
-		"homepage" : "https://awpcollins.github.io/react-portfolio",
+  "homepage": "https://github.com/awpcollins/react-portfolio",
   "dependencies": {
     "babel": "^6.23.0",
     "classnames": "^2.2.6",
@@ -24,6 +25,7 @@
     "autoprefixer": "^9.4.3",
     "concat": "^1.0.3",
     "eslint-plugin-react": "^7.12.4",
+    "gh-pages": "^2.0.1",
     "node-sass": "^4.10.0",
     "npm-run-all": "^4.1.5",
     "postcss-cli": "^6.0.1",
