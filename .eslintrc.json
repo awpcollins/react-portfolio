@@ -3,6 +3,7 @@
         "browser": true,
         "es6": true
     },
+    "parser": "babel-eslint",
     "extends": [
         "eslint:recommended",
         "plugin:react/recommended"
@@ -22,6 +23,7 @@
             "error",
             "tab"
         ],
+								"react/prop-types": 0,
         "linebreak-style": [
             "error",
             "unix"

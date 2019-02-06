@@ -1,20 +1,20 @@
-import React from "react";
+import React from 'react'
 
 const TechItem = ({item, title}) => {
 
 	const goToProjects = (e) => {
-		e.preventDefault();
+		e.preventDefault()
 
 		if(item.link){
-			 window.open(item.link);
+			window.open(item.link)
 		}
 	}
 
-  return (
-    <button className="tech-item" onClick={goToProjects}>
-      {title}
-    </button>
-  );
-};
+	return (
+		<button className='tech-item' onClick={goToProjects}>
+			{title}
+		</button>
+	)
+}
 
-export default TechItem;
+export default TechItem
